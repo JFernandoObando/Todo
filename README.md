@@ -1,17 +1,23 @@
 # Todo
 Prueba Laravel
+
 composer create-project laravel/laravel todo   
 //Crea el modelo y la -m es para crear la migracion
+
 php artisan make:model Pelicula -m
 
 //Ejecutar las migraciones
+
 php artisan migrate
 //Estado de  migraciones
+
 php artisan migrate:status
 //Regresar una version anterior
+
 php artisan migrate:rollback
 
 //Crear el controlador de Peliculas
+
 php artisan make:controller PeliculasController
 
 #index para mostrar
@@ -21,14 +27,19 @@ php artisan make:controller PeliculasController
 #edit para mostrar el formulario de edicion
 
 //Ver lista de rutas
+
 php artisan route:list
+
 
 php artisan make:model Categoria -m
 //Para convertir en recurso y utilizar la logica de Peliculas
+
 php artisan make:controller CategoriesController --resource
 
 //Para crear la relacion
+
 php artisan make:migration categoria_to_peliculas --table:peliculas
+
 
  public function up()
     {
